@@ -15,7 +15,7 @@
 <section>
 <form name="reg"  id="reg" method="post" action="regval.php">
 	Name* <input type="text" name="name" required><br>
-	Email* <input type="email" name="email" required><br>
+	Email* <input type="email" name="email" required palceholder="xyz@gmail.com"><br>
 	Password* <input type="password" name="password" required><br>
 	Confirm Password* <input type="password" name="Cpassword" required>
 	<a id="w">Please enter the same password!</a><br><br>
