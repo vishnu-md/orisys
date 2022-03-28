@@ -40,7 +40,7 @@ $conn=mysqli_connect('localhost','root','','orisys');
     	else{
     		?>
           <script>
-             alert("Register your account");
+             alert("Enter correct Email id and password/ Register your account");
              </script>
              <?php
       }
