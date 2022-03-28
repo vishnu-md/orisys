@@ -16,9 +16,10 @@
 <form name="reg"  id="reg" method="post" action="regval.php">
 	Name* <input type="text" name="name" required><br>
 	Email* <input type="email" name="email" required palceholder="xyz@gmail.com"><br>
-	Password* <input type="password" name="password" required><br>
+	Password* <input type="password" name="password" required>
+	<a id="w1">Must be more than 8 character!</a><br>
 	Confirm Password* <input type="password" name="Cpassword" required>
-	<a id="w">Please enter the same password!</a><br><br>
+	<a id="w2">Please enter the same password!</a><br><br>
 <input class="button" type="submit" onclick="return validate()" name="register" value="Register" >
 </form>
 	
@@ -28,8 +29,12 @@
 	function validate() {
 	var password=document.reg.password.value;
 	var Cpassword=document.reg.Cpassword.value;
-	if(Cpassword!=password){
-		document.getElementById('w').style.visibility='visible';
+	if(password.length < 8) {  
+     document.getElementById("w1").style.visibility='visible'; 
+     return false;  
+  }  
+  	if(Cpassword!=password){
+		document.getElementById('w2').style.visibility='visible';
 		document.reg.Cpassword.focus();
         return false;
 	}
