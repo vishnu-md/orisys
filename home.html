@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                text-align: center;
+                background-image: url('images/bg1.jpg');
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:cover;
+                margin: 0;
+                color: orange;
+            }
+            h1{
+                padding: 25px;
+            }
+            .button:hover{
+                color: orange;
+            }
+            .button{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Orisys India</h1>
+        <form action="homeval.php" method="post">
+           <label for="email">Email:</label>
+           <input type="email" name="email" palceholder="xyzWgmail.com" required><br>
+           <label for="password">Password:</label>
+           <input type="password" name="password" required>
+           <input class="button" type="submit" name="login" value="Login">
+        </form> 
+        <p>For sign-up?</p>
+        <a  href="register.php"> <input class="button" type="submit" name="register" value="Register"></a>
+    </body>
+    </html>
