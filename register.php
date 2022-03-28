@@ -33,7 +33,6 @@
      document.getElementById("w1").style.visibility='visible'; 
      return false;  
   }  
-  
   	if(Cpassword!=password){
 		document.getElementById('w2').style.visibility='visible';
 		document.reg.Cpassword.focus();
